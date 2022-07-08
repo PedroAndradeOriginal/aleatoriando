@@ -51,16 +51,15 @@ table {
 /*Geral da pÃ¡gina*/
 
 html{
-    background-image: url(img/background_white.png);
-    background-size: auto;
     font-family: 'Architects Daughter', cursive;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    background-image: url(img/background_white.png);
+    background-size:cover;
 }
 
 /*|------------------------//-------------------------|*/
@@ -334,7 +333,7 @@ footer a:hover{
 @media screen and (max-width: 640px) {
     .bloco{
         width: 340px;
-        height: 520px;
+        height: 600px;
         display: grid;
         align-items: center;
         justify-content: center;
@@ -399,6 +398,7 @@ footer a:hover{
     }
 
     footer {
+        width: auto;
         display: grid;
         height: 20px;
     }
