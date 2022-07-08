@@ -1,0 +1,413 @@
+/*Reset CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*|------------------------//-------------------------|*/
+
+
+
+/*Geral da pÃ¡gina*/
+
+html{
+    background-image: url(img/background_white.png);
+    background-size: auto;
+    font-family: 'Architects Daughter', cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*|------------------------//-------------------------|*/
+
+
+
+/*Layout do bloco*/
+
+.bloco{
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 1200px;
+    height: 550px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+}
+
+/*|------------------------//-------------------------|*/
+
+
+
+/*Layout as divs da primeira coluna*/
+
+.coluna01{
+    width: 450px;
+    height: 380px;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.circulo{
+    background-color: #DCCEE8;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo .interno{
+    background-color: #F4F4F4;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo h1{
+    display: block;
+    align-items: center;
+    color: #222222;
+    font-size: 120pt;
+}
+
+.botao {
+    margin-top: 50px;
+    width: 250px;
+    height: 80px;
+    border-radius: 30px;
+    background-color: #9D3BAD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 5px 5px #737373;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.botao h2 {
+    font-size: 40pt;
+    color: #F4F4F4;
+}
+
+/*|------------------------//-------------------------|*/
+
+
+/*Layout as divs da segunda coluna*/
+
+.coluna02{
+    width: 450px;
+    height: 380px;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.coluna02 h1{
+    color: #222222;
+    font-size: 30pt;
+}
+
+#input01 {
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16pt;
+}
+
+#input02 {
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16pt;
+}
+
+.coluna02 h2{
+    color: #222222;
+    font-size: 16pt;
+}
+
+.coluna02 h3{
+    color: #9D3BAD;
+    font-size: 16pt;
+}
+
+
+/*|------------------------//-------------------------|*/
+
+
+/*Layout do footer*/
+
+footer {
+    margin-top: 20px;
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h1{
+    font-size: 12pt;
+}
+
+footer span{
+    color: #9D3BAD;
+    font-size: 18pt;
+}
+
+#icones {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+#freepik{
+    display: none;
+}
+
+/*|------------------------//-------------------------|*/
+
+
+
+/* Responsivo tela de 1200*/
+
+@media screen and (max-width: 1210px) {
+    .bloco{
+        align-items: center;
+        margin-top: 1.5rem;
+        border-radius: 15px;
+        width: 900px;
+        height: 500px;
+        background-color: #F4F4F4;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*|------------------------//-------------------------|*/
+
+
+/* Responsivo tela de 900*/
+
+@media screen and (max-width: 916px) {
+    .bloco{
+        width: 600px;
+        height: 250px;
+    }
+
+    .coluna01{
+        width: 180px;
+        height: 220px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circulo{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .circulo .interno{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circulo h1{
+        font-size: 50pt;
+    }
+    
+    .botao {
+        margin-top: 10px;
+        width: 120px;
+        height: 50px;
+    }
+    
+    .botao h2 {
+        font-size: 20pt;
+    }
+    
+    .coluna02{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .coluna02 h1{
+        font-size: 16pt;
+    }
+    
+    #input01 {
+        font-size: 12pt;
+        height: 25px;
+    }
+    
+    #input02 {
+        font-size: 12pt;
+        height: 25px;
+    }
+    
+    .coluna02 h2{
+        font-size: 14pt;
+    }
+    
+    .coluna02 h3{
+        color: #9D3BAD;
+        font-size: 14pt;
+    }
+
+    footer img{
+        height: 20px;
+    }
+
+    footer span{
+        font-size: 16pt;
+    }
+    
+
+}
+
+/*|------------------------//-------------------------|*/
+
+
+/* Responsivo tela de celular U-640*/
+
+@media screen and (max-width: 640px) {
+    .bloco{
+        width: 340px;
+        height: 520px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .coluna01{
+        width: 340px;
+        height: 200px;
+    }
+
+    .circulo{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circulo .interno{
+        width: 130px;
+        height: 130px;
+    }
+    
+    .circulo h1{
+        font-size: 40pt;
+    }
+    
+    .botao {
+        margin-top: 30px;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .botao h2 {
+        font-size: 20pt;
+    }
+    
+    .coluna02{
+        width: 340px;
+        height: 200px;
+    }
+    
+    .coluna02 h1{
+        font-size: 16pt;
+    }
+    
+    #input01 {
+        font-size: 12pt;
+        height: 25px;
+    }
+    
+    #input02 {
+        font-size: 12pt;
+        height: 25px;
+    }
+    
+    .coluna02 h2{
+        font-size: 12pt;
+    }
+    
+    .coluna02 h3{
+        color: #9D3BAD;
+        font-size: 12pt;
+    }
+
+    footer {
+        display: grid;
+        height: 20px;
+    }
+
+    #icones{
+        width: 279px;
+        margin-top: 15px;
+    }
+
+}
+
+/*|------------------------//-------------------------|*/
