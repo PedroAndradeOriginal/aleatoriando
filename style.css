@@ -194,9 +194,9 @@ body{
 
 footer {
     margin-top: 20px;
-    width: 550px;
+    width: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -207,6 +207,7 @@ footer h1{
 footer span{
     color: #9D3BAD;
     font-size: 18pt;
+    margin-right: 30px;
 }
 
 #icones {
