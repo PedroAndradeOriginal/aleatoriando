@@ -66,6 +66,28 @@ body{
 
 
 
+.botao-reset {
+    position: fixed;
+    width: 160px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #d32525;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 1px #222222;
+    color: #F4F4F4;
+    font-size: 25pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botao-reset:hover {
+    transform: scale(1.1);
+}
+
+
 /*Layout do bloco*/
 
 .bloco{
