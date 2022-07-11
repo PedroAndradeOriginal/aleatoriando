@@ -37,12 +37,12 @@ function teste() {
         } else {
             arrayRange = criaArrayRange(numMenor, numMaior);
             if (arraySorteados.length == (numMaior - numMenor) + 1) {
-                window.alert ('Fim! Recarregue a página para outro sorteio. Obrigado!');
+                window.alert ('Fim! Clique no botão RESET ou recarregue a página para outro sorteio. Obrigado!');
                 return;
             }
             while (i < 1) {
                 if (arraySorteados.length == (numMaior - numMenor) + 1) {
-                    window.alert ('Fim! Recarregue a página para outro sorteio. Obrigado!');
+                    window.alert ('Fim! Clique no botão RESET ou recarregue a página para outro sorteio. Obrigado!');
                     return;
                 }
                 indiceRandomico = gerarNumero(0, arrayRange.length - 1);
@@ -58,7 +58,7 @@ function teste() {
             if (i > 2) {
                 while (j < 1) {
                     if (arraySorteados.length == (numMaior - numMenor) + 1) {
-                        window.alert ('Fim! Recarregue a página para outro sorteio. Obrigado!');
+                        window.alert ('Fim! Clique no botão RESET ou recarregue a página para outro sorteio. Obrigado!');
                         return;
                     }
                     indiceRandomico = gerarNumero(0, arrayRange.length - 1);
